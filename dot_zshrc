@@ -1,0 +1,45 @@
+# 1Password SSH Setting
+export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
+
+# for salon-gateway
+# 1Password ref for Github PAT
+export NPM_GITHUB_AUTH_TOKEN="op://Personal/GitHub/Personal-Access-Token-Classic/neon-env"
+
+if [[ $TERM_PROGRAM != "Warp.app" ]]; then
+	# iTerm2 Shell Integration
+	test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+	# starship https://github.com/starship/starship
+	eval "$(starship init zsh)"
+	# vim mode
+	bindkey -v
+	bindkey -M viins jj vi-cmd-mode
+
+	# zsh-autosuggestuin (currently via homebrew)
+	source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+	# zsh-completion (currently via homebrew)
+	if type brew &>/dev/null; then
+		FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+		# for my own additional commands
+		fpath=(~/.zsh/completion "$fpath[@]")
+		autoload -Uz compinit
+		compinit
+	fi
+
+	func peco-command-history-reverse-search() {
+		BUFFER=$(history -n -r 1 | peco --query "$LBUFFER")
+		CURSOR="$#BUFFER"
+	}
+	func peco-command-history-search() {
+		BUFFER=$(history -n 1 | peco --layout=top-down --query "$LBUFFER")
+		CURSOR="$#BUFFER"
+	}
+	zle -N peco-command-history-search 
+	zle -N peco-command-history-reverse-search 
+	bindkey -M vicmd "?" peco-command-history-reverse-search
+	bindkey -M vicmd "/" peco-command-history-search
+	bindkey "<C-r>" peco-command-history-search
+	# zsh-syntax-highlighting
+	source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
+

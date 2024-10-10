@@ -1,0 +1,48 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = '$status$all'
+command_timeout = 2000
+
+[character]
+success_symbol = '\$(green)'
+error_symbol = '\$(red)'
+vimcmd_symbol = '-(blue bold)'
+[directory]
+style = 'bold'
+read_only = ''
+truncation_length = 100 # no trancate
+truncate_to_repo = false
+[cmd_duration]
+disabled = true
+style = 'dimmed'
+[git_branch]
+symbol = ''
+style = 'bold'
+format = 'git:\([$symbol$branch(:$remote_branch)]($style)\) '
+[git_commit]
+tag_disabled = false
+tag_symbol = ''
+[git_state]
+style = 'bold'
+[git_metrics]
+disabled = false
+[git_status]
+disabled = true
+[golang]
+disabled = true
+[nodejs]
+disabled = true
+[buf]
+disabled = true
+[php]
+disabled = true
+[terraform]
+disabled = true
+[docker_context]
+disabled = true
+[package]
+disabled = true
+[status]
+disabled = true
+format = '[$status]($style) '
+success_symbol = 'o'

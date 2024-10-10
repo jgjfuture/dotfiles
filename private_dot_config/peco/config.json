@@ -1,0 +1,11 @@
+{
+	"prompt": ">",
+	"layout": "bottom-up",
+	"Use256Color": true,
+	"InitialFilter": "SmartCase",
+	"Keymap": {
+		"C-j": "peco.SelectDown",
+		"C-k": "peco.SelectUp",
+		"C-[": "peco.Cancel"
+	}
+}
