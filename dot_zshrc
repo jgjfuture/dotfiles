@@ -6,15 +6,13 @@ export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agen
 export NPM_GITHUB_AUTH_TOKEN="op://Personal/GitHub/Personal-Access-Token-Classic/neon-env"
 
 if [[ $TERM_PROGRAM != "Warp.app" ]]; then
-	# iTerm2 Shell Integration
-	test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 	# starship https://github.com/starship/starship
 	eval "$(starship init zsh)"
 	# vim mode
 	bindkey -v
 	bindkey -M viins jj vi-cmd-mode
 
-	# zsh-autosuggestuin (currently via homebrew)
+	# zsh-autosuggestion (currently via homebrew)
 	source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 	# zsh-completion (currently via homebrew)
