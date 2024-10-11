@@ -1,3 +1,5 @@
+export EDITOR=nvim
+
 if [[ $TERM_PROGRAM != "Warp.app" ]]; then
 	# starship https://github.com/starship/starship
 	eval "$(starship init zsh)"
