@@ -1,4 +1,6 @@
 export EDITOR=nvim
+export HISTSIZE=10000
+export SAVEHIST=100000
 
 if [[ $TERM_PROGRAM != "Warp.app" ]]; then
 	# starship https://github.com/starship/starship
