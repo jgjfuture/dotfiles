@@ -6,6 +6,8 @@
 	"Keymap": {
 		"C-j": "peco.SelectDown",
 		"C-k": "peco.SelectUp",
-		"C-[": "peco.Cancel"
+		"C-[": "peco.Cancel",
+		"Tab": "peco.ToggleSelectionAndSelectNext",
+		"C-a": "peco.ToggleSelectionAndSelectNext"
 	}
 }
