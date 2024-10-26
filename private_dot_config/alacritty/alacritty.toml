@@ -1,3 +1,4 @@
+[general]
 # import = ["~/.config/alacritty/themes/themes/night_owlish_light.toml"]
 import = ["~/.config/alacritty/themes/themes/night_owl.toml"]
 
