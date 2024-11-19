@@ -9,6 +9,9 @@ if [[ $TERM_PROGRAM != "Warp.app" ]]; then
 	bindkey -v
 	bindkey -M viins jj vi-cmd-mode
 
+	# aliases
+	alias vim=nvim
+
 	# zsh-autosuggestion (currently via homebrew)
 	source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
