@@ -1,4 +1,6 @@
 # key bindings
 bind generic g move-first-line
 bind generic G move-last-line
+bind generic <C-j> move-half-page-down
+bind generic <C-k> move-half-page-up
 
