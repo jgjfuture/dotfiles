@@ -4,3 +4,5 @@ bind generic G move-last-line
 bind generic <C-j> move-half-page-down
 bind generic <C-k> move-half-page-up
 
+# diff editor settings
+set wrap-lines = yes

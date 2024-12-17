@@ -22,3 +22,4 @@ vim.keymap.set('v', '<C-k>', '5k', { noremap = true })
 -- Plugin
 -- Enable matchit plugin
 vim.cmd('packadd! matchit')
+
