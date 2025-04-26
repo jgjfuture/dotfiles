@@ -8,6 +8,7 @@ dynamic_padding = true
 # opacity = 0.85
 # blur = true
 dimensions = { columns = 150, lines = 45 }
+startup_mode = "Maximized"
 
 [font]
 normal = { family = "Jetbrains Mono", style = "Light" }
