@@ -28,8 +28,8 @@ if vim.g.vscode then
   vim.keymap.set('n', '==', function() vscode.action("editor.action.formatDocument") end)
   vim.keymap.set('n', '[c', function() vscode.action("workbench.action.editor.nextChange") end)
   vim.keymap.set('n', ']c', function() vscode.action("workbench.action.editor.previousChange") end)
-  vim.keymap.set('n', '[e', function() vscode.action("workbench.action.marker.nextInFiles") end)
-  vim.keymap.set('n', ']e', function() vscode.action("workbench.action.marker.prevInFiles") end)
+  vim.keymap.set('n', '[e', function() vscode.action("editor.action.marker.nextInFiles") end)
+  vim.keymap.set('n', ']e', function() vscode.action("editor.action.marker.prevInFiles") end)
   vim.keymap.set('n', '<Space>', function() vscode.action("workbench.action.showCommands") end)
   vim.keymap.set('n', '<C-I>', function() vscode.action("editor.action.goToImplementation") end)
 
