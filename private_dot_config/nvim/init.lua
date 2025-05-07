@@ -1,5 +1,7 @@
 -- Buffer
 vim.opt.hlsearch = true
+vim.o.ignorecase = true
+vim.o.smartcase = true
 
 -- Command mode
 
