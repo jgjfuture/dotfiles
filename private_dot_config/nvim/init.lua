@@ -21,8 +21,7 @@ vim.keymap.set('v', '<C-j>', '5j', { noremap = true })
 vim.keymap.set('v', '<C-k>', '5k', { noremap = true })
 
 -- Plugin
--- Enable matchit plugin
--- vim.cmd('packadd! matchit')
+require("config.lazy")
 
 -- Environment Specific Configs
 if vim.g.vscode then
