@@ -2,6 +2,9 @@ export EDITOR=nvim
 export HISTSIZE=10000
 export SAVEHIST=100000
 
+# fast node manager setup
+eval "$(fnm env --use-on-cd --shell zsh)"
+
 if [[ $TERM_PROGRAM != "Warp.app" ]]; then
 	# starship https://github.com/starship/starship
 	eval "$(starship init zsh)"
