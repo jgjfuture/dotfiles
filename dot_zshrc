@@ -5,6 +5,9 @@ export SAVEHIST=100000
 # fast node manager setup
 eval "$(fnm env --use-on-cd --shell zsh)"
 
+# set tig code editor as VSCode
+export TIG_EDITOR="code --wait"
+
 if [[ $TERM_PROGRAM != "Warp.app" ]]; then
 	# starship https://github.com/starship/starship
 	eval "$(starship init zsh)"
