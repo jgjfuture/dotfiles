@@ -33,6 +33,8 @@ if vim.g.vscode then
   vim.keymap.set('n', ']e', function() vscode.action("editor.action.marker.prevInFiles") end)
   vim.keymap.set('n', '<Space>', function() vscode.action("workbench.action.showCommands") end)
   vim.keymap.set('n', 'gI', function() vscode.action("editor.action.goToImplementation") end)
+  vim.keymap.set('i', '<C-n>', function() vscode.action("editor.action.triggerSuggest"); end)
+  vim.keymap.set('i', '<C-p>', function() vscode.action("editor.action.triggerSuggest"); end)
 
   vim.opt.clipboard:append("unnamedplus")
 else
