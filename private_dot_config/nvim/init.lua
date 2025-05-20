@@ -1,4 +1,5 @@
 -- Buffer
+
 vim.opt.hlsearch = true
 vim.o.ignorecase = true
 vim.o.smartcase = true
@@ -26,6 +27,8 @@ require("config.lazy")
 -- Environment Specific Configs
 if vim.g.vscode then
   local vscode = require('vscode')
+
+  -- keymap
   vim.keymap.set('n', '==', function() vscode.action("editor.action.formatDocument") end)
   vim.keymap.set('n', '[c', function() vscode.action("workbench.action.editor.nextChange") end)
   vim.keymap.set('n', ']c', function() vscode.action("workbench.action.editor.previousChange") end)
@@ -35,6 +38,12 @@ if vim.g.vscode then
   vim.keymap.set('n', 'gI', function() vscode.action("editor.action.goToImplementation") end)
   vim.keymap.set('i', '<C-n>', function() vscode.action("editor.action.triggerSuggest"); end)
   vim.keymap.set('i', '<C-p>', function() vscode.action("editor.action.triggerSuggest"); end)
+
+  local function vscode_only()
+    vscode.action("workbench.action.closeOtherEditors")
+  end
+  vim.api.nvim_create_user_command('O', vscode_only, {force = true})
+  vim.api.nvim_create_user_command('Only', vscode_only, {force = true})
 
   vim.opt.clipboard:append("unnamedplus")
 else
