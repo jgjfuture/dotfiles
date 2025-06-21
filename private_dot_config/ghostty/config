@@ -1,0 +1,6 @@
+theme = dark:OneHalfDark,light:OneHalfLight
+
+background-blur = true
+background-opacity = 0.9
+
+macos-titlebar-proxy-icon = hidden
