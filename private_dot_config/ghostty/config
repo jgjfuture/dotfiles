@@ -1,4 +1,4 @@
-theme = dark:Cobalt2,light:OneHalfLight
+theme = Cobalt2
 
 background-blur = true
 background-opacity = 0.9
