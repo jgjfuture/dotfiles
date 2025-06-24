@@ -5,3 +5,9 @@ maximize = true
 
 macos-titlebar-proxy-icon = hidden
 macos-icon = xray
+
+font-feature = "-dlig"
+
+font-family = ""
+font-family = "Jetbrains Mono"
+font-family = "Osaka"
