@@ -1,6 +1,7 @@
 theme = Cobalt2
 
-background-opacity = 1
+background-opacity = 0.95
+background-blur = true
 maximize = true
 
 macos-titlebar-proxy-icon = hidden
