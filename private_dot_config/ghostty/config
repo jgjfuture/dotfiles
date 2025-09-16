@@ -12,3 +12,5 @@ font-feature = "-dlig"
 font-family = ""
 font-family = "Jetbrains Mono"
 font-family = "Osaka"
+
+bell-features = "system"
