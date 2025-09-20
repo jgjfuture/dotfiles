@@ -5,7 +5,9 @@ background-blur = true
 maximize = true
 
 macos-titlebar-proxy-icon = hidden
-macos-icon = xray
+
+# disabled icon style below to apply macOS 26 icon style
+# macos-icon = xray
 
 font-feature = "-dlig"
 
