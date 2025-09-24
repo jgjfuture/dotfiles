@@ -1,7 +1,7 @@
 theme = Cobalt2
 
 background-opacity = 0.95
-background-blur = true
+background-blur = 40
 maximize = true
 
 macos-titlebar-proxy-icon = hidden
@@ -16,3 +16,11 @@ font-family = "Jetbrains Mono"
 font-family = "Osaka"
 
 bell-features = "system"
+
+# shaders
+
+# custom-shader = ~/.config/ghostty/custom-shaders/bloom.glsl
+# custom-shader = ~/.config/ghostty/custom-shaders/tft.glsl
+# custom-shader = ~/.config/ghostty/custom-shaders/glitchy.glsl
+# custom-shader = ~/.config/ghostty/custom-shaders/bettercrt.glsl
+custom-shader = ~/.config/ghostty/custom-shaders/custom-cursor.glsl
