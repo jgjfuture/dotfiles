@@ -23,4 +23,5 @@ bell-features = "system"
 # custom-shader = ~/.config/ghostty/custom-shaders/tft.glsl
 # custom-shader = ~/.config/ghostty/custom-shaders/glitchy.glsl
 # custom-shader = ~/.config/ghostty/custom-shaders/bettercrt.glsl
-custom-shader = ~/.config/ghostty/custom-shaders/custom-cursor.glsl
+# custom-shader = ~/.config/ghostty/custom-shaders/cursor_blaze.glsl
+
