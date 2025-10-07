@@ -1,13 +1,9 @@
-theme = Cobalt2
-
-background-opacity = 0.95
-background-blur = 40
 maximize = true
 
 macos-titlebar-proxy-icon = hidden
 
 # disabled icon style below to apply macOS 26 icon style
-# macos-icon = xray
+macos-icon = xray
 
 font-feature = "-dlig"
 
@@ -24,4 +20,7 @@ bell-features = "system"
 # custom-shader = ~/.config/ghostty/custom-shaders/glitchy.glsl
 # custom-shader = ~/.config/ghostty/custom-shaders/bettercrt.glsl
 # custom-shader = ~/.config/ghostty/custom-shaders/cursor_blaze.glsl
+
+# multi config
+config-file = ?./config.local
 
