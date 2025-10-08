@@ -5,6 +5,9 @@ macos-titlebar-proxy-icon = hidden
 # disabled icon style below to apply macOS 26 icon style
 macos-icon = xray
 
+macos-window-buttons = hidden
+
+
 font-feature = "-dlig"
 
 font-family = ""
