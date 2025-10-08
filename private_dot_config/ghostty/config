@@ -11,7 +11,7 @@ font-family = ""
 font-family = "Jetbrains Mono"
 font-family = "Osaka"
 
-bell-features = "system"
+bell-features = "system,attention,no-title"
 
 # shaders
 
