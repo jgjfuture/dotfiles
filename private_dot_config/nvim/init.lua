@@ -21,6 +21,10 @@ vim.keymap.set('n', '<Esc>', ':nohl<CR>', { noremap = true, silent = true })
 vim.keymap.set('v', '<C-j>', '5j', { noremap = true })
 vim.keymap.set('v', '<C-k>', '5k', { noremap = true })
 
+if not vim.g.vscode then
+  vim.g.mapleader = '<Space>'
+end
+
 -- Plugin
 require("config.lazy")
 
@@ -50,4 +54,12 @@ if vim.g.vscode then
 else
   -- only for ordinal neovim
   vim.opt.relativenumber = true
+
+  -- telescope settings
+  local builtin = require('telescope.builtin')
+  vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
+  vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
+  vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
+  vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 end
+
