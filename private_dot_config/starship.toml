@@ -1,7 +1,7 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = '$status$all'
-command_timeout = 2000
+command_timeout = 500
 
 [character]
 success_symbol = '\$(green)'
@@ -28,7 +28,12 @@ style = 'bold'
 disabled = false
 [git_status]
 disabled = true
+
+# runtimes
+[nodejs]
+disabled = true
 [golang]
+disabled = true
 symbol = 'go '
 [ruby]
 symbol = 'ruby '
@@ -37,11 +42,13 @@ disabled = true
 [php]
 disabled = true
 [bun]
+disabled = true
 symbol = 'bun '
 [terraform]
 disabled = true
 [docker_context]
 disabled = true
+
 [package]
 disabled = true
 [status]
