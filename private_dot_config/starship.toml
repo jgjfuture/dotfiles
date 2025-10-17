@@ -36,6 +36,7 @@ disabled = true
 disabled = true
 symbol = 'go '
 [ruby]
+disabled = true
 symbol = 'ruby '
 [buf]
 disabled = true
