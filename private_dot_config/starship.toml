@@ -30,6 +30,8 @@ disabled = false
 disabled = true
 [golang]
 symbol = 'go '
+[ruby]
+symbol = 'ruby '
 [buf]
 disabled = true
 [php]
