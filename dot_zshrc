@@ -1,12 +1,25 @@
 export EDITOR=nvim
-export HISTSIZE=10000
-export SAVEHIST=100000
 
 # fast node manager setup
 eval "$(fnm env --use-on-cd --shell zsh)"
 
 # set tig code editor as VSCode
 export TIG_EDITOR="code --wait"
+
+# history settings
+export HISTFILE=~/.zsh_history
+export HISTSIZE=10000
+export SAVEHIST=100000
+setopt EXTENDED_HISTORY
+setopt INC_APPEND_HISTORY
+setopt SHARE_HISTORY
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_IGNORE_DUPS
+setopt HIST_FIND_NO_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_SAVE_NO_DUPS
+setopt HIST_REDUCE_BLANKS
+
 
 if [[ $TERM_PROGRAM != "Warp.app" ]]; then
 	# starship https://github.com/starship/starship
