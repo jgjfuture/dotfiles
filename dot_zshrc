@@ -30,9 +30,6 @@ if [[ $TERM_PROGRAM != "Warp.app" ]]; then
 
 	# aliases
 	alias vim=nvim
-	if command -v cursor >/dev/null 2>&1; then
-		alias code=cursor
-	fi
 
 	# zsh-autosuggestion (currently via homebrew)
 	source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
