@@ -1,0 +1,12 @@
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# to avoid global npm package installation, make npmbin on home directory
+export PATH="$HOME/npmbin/node_modules/.bin:$PATH"
+
+# 1Password SSH Setting
+export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
+
+if [ -f ~/.zprofile.local ]; then
+  source ~/.zprofile.local
+fi
+
