@@ -1,0 +1,9 @@
+{
+  "cd": {
+    "command": "/opt/homebrew/bin/fish",
+    "args": [
+      "--login"
+    ]
+  }
+}
+
