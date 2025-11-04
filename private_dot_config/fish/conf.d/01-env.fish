@@ -6,6 +6,8 @@ if status --is-login
   
   # set default tui editor as neovim
   set -x EDITOR nvim
-  set -x TIG_EDITOR "nvim"
+
+  # for lazygit config dir set .config/lazygit
+  set -x XDG_CONFIG_HOME "$HOME/.config"
 end
 
