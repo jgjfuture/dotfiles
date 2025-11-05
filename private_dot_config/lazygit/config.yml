@@ -1,25 +1,22 @@
 gui:
   theme:
-    # Custom night owl
     activeBorderColor:
-      - '#82AAFF'  # Functions - アクティブな要素
-      - bold
+      - cyan
     inactiveBorderColor:
-      - '#5F7E97'  # Search highlight - 不活性な要素
+      - default
     optionsTextColor:
-      - '#7FDBCA'  # Language variables - オプションテキスト
+      - default
     selectedLineBgColor:
-      - '#1D3B53'  # Active selection - 選択行の背景
+      - cyan
     cherryPickedCommitBgColor:
-      - '#7E57C2'  # Keywords系 - Cherry picked背景
+      - default
     cherryPickedCommitFgColor:
-      - '#ECC48D'  # Quoted strings - Cherry picked前景
+      - default
     unstagedChangesColor:
-      - '#FF6363'  # Constant - 未ステージング変更
+      - default
     defaultFgColor:
-      - '#D6DEEB'  # Foreground - デフォルト前景色
+      - default
     searchingActiveBorderColor:
-      - '#F78C6C'  # Numbers - 検索時のアクティブボーダー
+      - default
     authorColors:
-      '*': '#C792EA'  # Keywords - デフォルト作成者色
-
+      '*': default
