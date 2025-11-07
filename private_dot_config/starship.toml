@@ -4,9 +4,10 @@ format = '$status$all'
 command_timeout = 500
 
 [character]
-success_symbol = '\$(green)'
-error_symbol = '\$(red)'
-vimcmd_symbol = '-(blue bold)'
+success_symbol = '[\$](bold cyan)'
+error_symbol = '[\$](yellow)'
+vimcmd_symbol = '[\(normal\)](white)'
+vimcmd_visual_symbol = '[\(visual\)](white)'
 [directory]
 style = 'bold'
 read_only = ''
