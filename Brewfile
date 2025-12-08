@@ -1,8 +1,6 @@
 # rule:
 #   include only required from dotfiles within this repo
 
-tap "homebrew/services"
-brew "chezmoi"
 brew "neovim"
 cask "ghostty"
 brew "peco"
