@@ -1,7 +1,6 @@
 # rule:
 #   include only required from dotfiles within this repo
 
-tap "homebrew/bundle"
 tap "homebrew/services"
 brew "chezmoi"
 brew "neovim"
