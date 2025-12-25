@@ -34,8 +34,8 @@ if vim.g.vscode then
 
   -- keymap
   vim.keymap.set('n', '==', function() vscode.action("editor.action.formatDocument") end)
-  vim.keymap.set('n', '[c', function() vscode.action("workbench.action.editor.nextChange") end)
-  vim.keymap.set('n', ']c', function() vscode.action("workbench.action.editor.previousChange") end)
+  vim.keymap.set('n', '[c', function() vscode.action("workbench.action.editor.nextChange"); vscode.action("workbench.action.compareEditor.nextChange") end)
+  vim.keymap.set('n', ']c', function() vscode.action("workbench.action.editor.previousChange"); vscode.action("workbench.action.compareEditor.previousChange") end)
   vim.keymap.set('n', '[e', function() vscode.action("editor.action.marker.nextInFiles") end)
   vim.keymap.set('n', ']e', function() vscode.action("editor.action.marker.prevInFiles") end)
   vim.keymap.set('n', '<Space>', function() vscode.action("workbench.action.showCommands") end)
