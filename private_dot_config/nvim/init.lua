@@ -28,6 +28,11 @@ end
 -- Plugin
 require("config.lazy")
 
+-- file explorer
+if not vim.g.vscode then
+	require("oil").setup()
+end
+
 -- Environment Specific Configs
 if vim.g.vscode then
   local vscode = require('vscode')
