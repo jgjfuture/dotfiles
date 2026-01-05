@@ -62,10 +62,22 @@ else
 
   -- telescope settings
   local builtin = require('telescope.builtin')
-  vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
+  local function find_files_with_hidden()
+    builtin.find_files({ hidden = true })
+  end
+  -- show hidden files (.gitignore is considered by default)
+  vim.keymap.set('n', '<leader>ff', find_files_with_hidden, { desc = 'Telescope find files (including hidden)' })
   vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
   vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
   vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
+
+  -- treesitter start on filetype
+  vim.api.nvim_create_autocmd("FileType", {
+    group = vim.api.nvim_create_augroup("vim-treesitter-start", {}),
+    callback = function(ctx)
+      pcall(vim.treesitter.start)
+    end,
+  })
 
   -- autosave settings
   vim.api.nvim_create_autocmd({ "FocusLost", "BufLeave" }, {
