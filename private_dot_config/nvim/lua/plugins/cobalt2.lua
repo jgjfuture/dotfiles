@@ -4,7 +4,7 @@ return {
     dependencies = { "tjdevries/colorbuddy.nvim", tag = "v1.0.0" },
     init = function()
 	if not vim.g.vscode then
-	  require("colorbuddy").colorscheme("cobalt2")
+	  -- require("colorbuddy").colorscheme("cobalt2")
         end
     end,
 }
