@@ -30,8 +30,12 @@ require("config.lazy")
 
 -- file explorer
 if not vim.g.vscode then
-	require("oil").setup()
+  require("oil").setup()
 end
+
+-- transparent background
+vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 
 -- Environment Specific Configs
 if vim.g.vscode then
