@@ -1,6 +1,7 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = '$status$all'
+right_format = '$time'
 command_timeout = 500
 
 [character]
@@ -29,6 +30,10 @@ style = 'bold'
 disabled = false
 [git_status]
 disabled = true
+[time]
+disabled = false
+style = 'dimmed'
+format = '[$time]($style) '
 
 # runtimes
 [nodejs]
